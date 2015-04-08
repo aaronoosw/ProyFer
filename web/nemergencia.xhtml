@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Nueva Emergencia</title>
+    </h:head>
+    <h:body>
+        <h:form>
+
+
+            <h:outputText value="Firstname: *" />
+            <p:inputText value="#{emergenciaWizard.user.firstname}" required="true" label="Firstname"/><br/>
+
+            <h:outputText value="Lastname: *" />
+            <p:inputText value="#{emergenciaWizard.user.lastname}" required="true" label="Lastname"/><br/>
+
+            <h:outputText value="Age: " />
+            <p:inputText value="#{emergenciaWizard.user.age}" required="true" label="Age"/><br/>
+
+
+
+
+            <h:outputText value="Street: " />
+            <p:inputText value="#{emergenciaWizard.user.street}" /><br/>
+
+            <h:outputText value="Postal Code: " />
+            <p:inputText value="#{emergenciaWizard.user.postalCode}" /><br/>
+
+            <h:outputText value="City: " />
+            <p:inputText value="#{emergenciaWizard.user.city}" /><br/>
+
+
+
+
+            <h:outputText value="Email: *" />
+            <p:inputText value="#{emergenciaWizard.user.email}" required="true" label="Email"/><br/>
+
+            <h:outputText value="Phone: " />
+            <p:inputText value="#{emergenciaWizard.user.phone}" required="true"/><br/>
+
+            <h:outputText value="Additional Info: " />
+            <p:inputText value="#{emergenciaWizard.user.info}" /><br/>
+
+            <h:commandButton value="Registrar nueva Emergencia" action="#{emergenciaWizard.save}"/>
+        </h:form>
+    </h:body>
+</html>
+
